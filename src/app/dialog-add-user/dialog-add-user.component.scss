@@ -1,0 +1,18 @@
+.input-container {
+    display: flex;
+    gap: 16px;
+    padding: 10px 0;
+}
+
+.action-container {
+    padding: 8px 24px;
+}
+.dialog-container {
+    position: relative;
+    mat-progress-bar {
+        position: absolute;
+    }
+}
+
+
+   

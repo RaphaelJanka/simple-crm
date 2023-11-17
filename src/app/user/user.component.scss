@@ -1,0 +1,48 @@
+button {
+    position: absolute;
+    bottom: 56px;
+    right: 56px;
+}
+
+mat-card-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+table {
+    border-collapse: collapse;
+    tr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        &:first-child {
+            cursor: unset;
+            &:hover {
+                background-color: unset;
+            }
+        }
+        &:last-child {
+            border-bottom: 0;
+        }
+        td {
+            height: 48px;
+            &:first-child {
+                padding-left: 16px;
+            }
+        }
+        th {
+            color: rgba(255, 255, 255, 0.7);
+            text-align: start;
+            padding-bottom: 16px;
+            &:first-child {
+                padding-left: 16px;
+            }
+        }
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+   
+    
+    
+}
+
