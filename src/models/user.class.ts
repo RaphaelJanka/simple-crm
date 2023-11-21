@@ -5,6 +5,8 @@ export class User {
     street: string;
     zipcode: number;
     city: string;
+    mail: string;
+    id: string;
 
     constructor(obj?:any) {
         this.firstname = obj ? obj.firstname : '';
@@ -13,6 +15,8 @@ export class User {
         this.street = obj ? obj.street : '';
         this.zipcode = obj ? obj.zipcode : '';
         this.city = obj ? obj.city : '';
+        this.mail = obj ? obj.mail : '';
+        this.id = obj ? obj.id : '';
     }
 
     public getJSON() {
@@ -23,6 +27,7 @@ export class User {
             street: this.street,
             zipcode: this.zipcode,
             city: this.city,
+            mail: this.mail
         }
     }
 }

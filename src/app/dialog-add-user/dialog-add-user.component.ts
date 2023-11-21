@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { Firestore, addDoc, collection, collectionData } from '@angular/fire/firestore';
+import { Firestore, addDoc, collection } from '@angular/fire/firestore';
 import { MatDialogRef } from '@angular/material/dialog';
 import { User } from 'src/models/user.class';
 
@@ -15,9 +15,11 @@ export class DialogAddUserComponent {
   isLoading: boolean = false;
 
   constructor(public dialogRef: MatDialogRef<DialogAddUserComponent>) {
-   
   }
-  onNoClick() {}
+
+  onNoClick() {
+    this.dialogRef.close();
+  }
 
   closeDialog() {
     this.dialogRef.close();
@@ -41,5 +43,7 @@ export class DialogAddUserComponent {
   getUserRef() {
     return collection(this.firestore, 'users')
   }
+
+
 
 }
